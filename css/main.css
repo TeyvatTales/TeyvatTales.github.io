@@ -1,0 +1,52 @@
+@import url('https://db.onlinewebfonts.com/c/0e663589b576e1e340e4fc28ea99626c?family=Sitka+Small');
+
+body {
+    margin-top: -1%;
+}
+
+html {
+    background: blue; /* fallback color */
+    background: linear-gradient( #2A5EA2, #152F51);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-family:"Sitka Small";
+    letter-spacing: 1.2px;
+    word-spacing: 6px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 100;
+    display:inline;
+    float:left;
+}
+
+.title .book {
+    width: 40px;
+    height: 40px; 
+    vertical-align: middle;
+}
+
+.date {
+    color: white;
+    font-family:"Omnes";
+    display:inline;
+    float:right;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.date .day {
+    font-weight: 400;
+}
+
+.date .current_date {
+    font-weight: 100;
+}
+
