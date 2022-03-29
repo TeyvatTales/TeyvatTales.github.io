@@ -21,7 +21,7 @@ html {
     margin-top: 30px;
     margin-left: 30px;
     font-weight: 100;
-    display:inline;
+    display:block;
     float:left;
 }
 
@@ -34,7 +34,7 @@ html {
 .date {
     color: white;
     font-family:"Omnes";
-    display:inline;
+    display:block;
     float:right;
     text-align: right;
     margin-top: 10px;
@@ -49,4 +49,39 @@ html {
 .date .current_date {
     font-weight: 100;
 }
+
+.traveler-greeting {
+    clear:right;
+    color: white;
+    font-family:"Omnes";
+    float: left;
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+.traveler-greeting .greetings {
+    font-weight: 100;
+}
+
+.large-container {
+    clear: left;
+    background: rgba(245,245,245,.06);
+    width: 750px;
+    height: 375px;
+    display:inline;
+    float: left;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+.semi-large-container {
+    background: rgba(245,245,245,.06);
+    width: 450px;
+    height: 375px;
+    display:inline;
+    float: right;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
 
