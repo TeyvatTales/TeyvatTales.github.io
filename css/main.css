@@ -111,10 +111,13 @@ html {
 
 .farmable-container {
     display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
     background: rgba(32,71,122);
     border-radius: 30px;
     margin-left: 10%;
     margin-right: 10%;
+
 }
 
 .farmable-container-title {
@@ -123,6 +126,35 @@ html {
     font-size: 25px;
     text-align: center;
     margin-top: -5%;
+    margin-bottom: -10%;
+}
+
+.listing {
+    background: rgba(191,191,191,.05);
+    border-radius: 22px;
+}
+
+.talent-book {
+    width: 40px;
+    height: 40px; 
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.listing-text {
+    color: white;
+    display: inline-block;
+    font-family:"Omnes";
+    font-size: 10px;
+    line-height: 8px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.item-title {
+    font-size: 12px;
+    margin: 0%;
 }
 
 
