@@ -92,7 +92,7 @@ html {
 
 .body-container {
     background: rgba(245,245,245,.06);
-    border-radius: 30px;
+    border-radius: 1vw;
 }
 
 .material-container {
@@ -101,7 +101,7 @@ html {
     column-gap: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 30px;
+    border-radius: 1vh;
 }
 
 .widget-container {
@@ -112,9 +112,9 @@ html {
 .farmable-container {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 8px;
+    row-gap: 1vh;
     background: rgba(32,71,122);
-    border-radius: 30px;
+    border-radius: 1.5vw;
     margin-left: 10%;
     margin-right: 10%;
 
@@ -123,38 +123,48 @@ html {
 .farmable-container-title {
     color: white;
     font-family:"Omnes";
-    font-size: 25px;
+    font-weight: 200;
+    font-size: 1.4vw;
     text-align: center;
-    margin-top: -5%;
-    margin-bottom: -10%;
+    margin-top: -3%;
+    margin-bottom: -8%;
 }
 
 .listing {
+    display:grid;
+    grid-template-columns: 25% 1fr;
     background: rgba(191,191,191,.05);
-    border-radius: 22px;
+    border-radius: 1vw;
 }
 
 .talent-book {
-    width: 40px;
-    height: 40px; 
+    width: 80%;
+    height: 80%; 
     display: inline-block;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .listing-text {
-    color: white;
-    display: inline-block;
-    font-family:"Omnes";
-    font-size: 10px;
-    line-height: 8px;
+    color: #D9D9D9;
     text-align: center;
-    margin-top: 5%;
-    margin-left: 5%;
 }
 
 .item-title {
-    font-size: 12px;
-    margin: 0%;
+    font-family:"Omnes";
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.item-location {
+    font-family:"Omnes Light";
+    font-size: 0.7vw;
+    margin-top: 0%;
+    margin-bottom: 5%;
 }
 
 
