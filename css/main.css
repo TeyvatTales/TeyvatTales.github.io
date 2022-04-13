@@ -163,19 +163,9 @@ html {
     border-radius: 1vw;
 }
 
-.talent-book {
-    width: 80%;
-    height: 80%; 
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.weapon-material {
-    width: 80%;
-    height: 80%; 
+.listing-image {
+    width: 8vh;
+    height: 8vh; 
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -201,7 +191,7 @@ html {
 .item-location {
     font-family:"Omnes Light";
     font-size: 0.9vw;
-    margin-top: 0%;
+    margin-top: .5%;
     margin-bottom: 5%;
 }
 
@@ -270,6 +260,7 @@ html {
     border-radius: 27px;
     display: inline-block;
     margin:auto;
+    border:none;
 }
 
 .abyss-stars {
@@ -315,7 +306,7 @@ html {
     font-size: 1.7vw;
     text-align: center;
     margin-top: -10%;
-    margin-bottom: -8%;
+    margin-bottom: -6%;
 }
 
 ::-webkit-scrollbar {
