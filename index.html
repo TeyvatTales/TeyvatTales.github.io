@@ -160,29 +160,61 @@
             <div class="widget-container">
                 <div class="reminder-container">
                     <div class="reminder-container-title">
-                        <p>Parametric Transformer</p>
+                        <p style = "font-size: 15px;">
+                            <img class = "reminder-icon" src="images/Item_Parametric_Transformer.png">
+                            Parametric Transformer
+                        </p>
+                    </div>
+                    <div class="refresh" style = "text-align: center">
+                        <a class="button">Refresh</a>
+                    </div>
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
                     </div>
                 </div>
                 <div class="reminder-container">
                     <div class="reminder-container-title">
                         <p>
-                            <img class="reminder-icon" src="images/HoYoLab.png">
-                            HoYoLab Login
+                            <img class="reminder-spiral-icon" src="images/Item_Spiral_Abyss.png">
+                            Spiral Abyss
                         </p>
                     </div>
-                    <div class="check-in" style="text-align: center">
-                        <a href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481"
-                            class="button">Check in now!</a>
+                    <div class="abyss-stars" style="text-align: center">
+                            <button class = increment-decrement onclick = "decrement()"> - </button>
+                            <p id = "stars" style="display: inline-block;">1 </p>
+                            <p style="display: inline-block;" > stars </p>
+                            <button class = increment-decrement onclick = "increment()"> + </button>
                     </div>
                     <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p style="font-size:15px;">Current Wishes</p>
+                    </div>
+                    <div class="current-banners" style="text-align: center">
+                        <img class="banners"  id="all-banners" src="images/banner1.png" onclick ="rotateBanner()">
+                    </div>
+                    <div class="timer" style="font-size:17px;">
+                        <p>Ends in 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title" style="margin-top: 7%">
+                        <p>
+                            <img class="reminder-boss-icon" id="all-bosses" src="images/Enemy_Andrius_Icon.png" onclick ="rotateBoss()">
+                            Weekly Bosses</p>
+                    </div>
+                    <div class="timer" style="margin-top: -20%">
                         <p>Resets 10h10m20s</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 
-    
+    <script src="js/main.js"></script>
+
 </body>
 </html>

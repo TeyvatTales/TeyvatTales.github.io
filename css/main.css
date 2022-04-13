@@ -237,6 +237,29 @@ html {
     margin-bottom: auto;
 }
 
+.reminder-spiral-icon { 
+    width: 15%;
+    height: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.reminder-boss-icon { 
+    width: 20%;
+    height: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .button {
     background: rgba(0,123,255);
     color:white;
@@ -247,6 +270,41 @@ html {
     border-radius: 27px;
     display: inline-block;
     margin:auto;
+}
+
+.abyss-stars {
+    color: white;
+    font-family:"Omnes";
+    word-spacing: 5px;
+    font-weight: 200;
+    font-size: 1.7vw;
+    display: inline-block;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.increment-decrement {
+    background: rgba(0,123,255);
+    color:white;
+    font-family:"Helvetica";
+    font-weight: 100;
+    text-decoration: none;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 10px;
+    display: inline-block;
+    margin:auto;
+}
+
+.banners {
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .timer {
