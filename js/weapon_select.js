@@ -49,31 +49,31 @@
         }
     }
 
-    const searchCharacter = () => {
+    const searchWeapon = () => {
         const searchBox = document.getElementById("search-item").value.toUpperCase();
         //Retrieves whatever is being inputted into the search bar (and then converting to uppercase)
-        const characterList = document.getElementById("character-list");
-        //Retrieves the whole list of characters for future reference
-        const character = document.querySelectorAll(".character");
-        // Selects all elements with the class name character
-        const characterName = characterList.getElementsByTagName("h2")
-        // Retrieves all the h2's of characterList collection which was the whole list of character
+        const weaponList = document.getElementById("weapon-list");
+        //Retrieves the whole list of weapons for future reference
+        const weapon = document.querySelectorAll(".weapon");
+        // Selects all elements with the class name weapon
+        const weaponName = weaponList.getElementsByTagName("h2")
+        // Retrieves all the h2's of weaponList collection which was the whole list of weapon
 
-        // Go through for loop to check each character name
-        for (var i = 0; i < characterName.length; i++) {
-            // Assign the current character name to the variable match
-            let match = character[i].getElementsByTagName("h2")[0];
+        // Go through for loop to check each weapon name
+        for (var i = 0; i < weaponName.length; i++) {
+            // Assign the current weapon name to the variable match
+            let match = weapon[i].getElementsByTagName("h2")[0];
 
             if (match) {
                 // Convert match into text/string for future reference/comparison
                 let textValue = match.textContent || match.innerHTML
 
                 // Compares textValue and what the user inputted into search box and confrims it has
-                // more than -1 similar letters (?) and then displays the character if it is true
+                // more than -1 similar letters (?) and then displays the weapon if it is true
                 if (textValue.toUpperCase().indexOf(searchBox) > -1) {
-                    character[i].style.display = "";
+                    weapon[i].style.display = "";
                 } else {
-                    character[i].style.display = "none";
+                    weapon[i].style.display = "none";
                 }
             }
         }

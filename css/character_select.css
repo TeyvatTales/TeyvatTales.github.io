@@ -86,7 +86,7 @@ html {
 
 .search-bar {
     height: 5vh;
-    width: 55%;
+    width: 100%;
     background: rgba(255,255,255, .06);
     border-radius: 30px;
     border-color: rgba(0,0,0, .40);
@@ -102,6 +102,11 @@ html {
 .character-container {
     overflow: scroll;
     height: 95%;
+}
+
+.back {
+    display: inline-block;
+    margin-left: 35%;
 }
 
 .character-list {

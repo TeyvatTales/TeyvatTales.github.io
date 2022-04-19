@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teyvat Tales</title>
+    <link rel="stylesheet" href="css/weapon_select.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Teyvat
+        <img class = "book" src="images/Adventurer_Handbook.png"  alt="Adventurer Handbook"> Tales </h1>
+    </div>
+    <div class="date">
+        <h1 class = "day">Monday</h1>
+        <h1 class = "current_date">March 22nd, 2022</h1>
+    </div>
+    <div class="traveler-greeting">
+        <h1 class = "greetings">Hello Traveler! Today you should farm:</h1>
+    </div>
+    
+    <div class="body-grid">
+        <div class="body-container">
+            <div class="weapon-container">
+                <form style="width: 55%; display: inline-block;">
+                    <input class="search-bar" type = "text" name ="" id="search-item" placeholder="Search for weapon" onkeyup="searchWeapon()">
+                </form>
+                <div class="back">
+                    <a href="index.html" class="button" style="border-radius: 5px;">Back</a>
+                </div>  
+                <div class="weapon-list" id="weapon-list">
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Favonius_Sword_2nd.png">
+                        <h2 hidden>Favonius Sword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Sacrificial_Sword_2nd.png">
+                        <h2 hidden>Sacrificial Sword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Lions_Roar_2nd.png">
+                        <h2 hidden>Lion's Roar</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Flute_2nd.png">
+                        <h2 hidden>The Flute</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Royal_Longsword_2nd.png">
+                        <h2 hidden>Royal Longsword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Blackcliff_Longsword_2nd.png">
+                        <h2 hidden>Blackcliff Longsword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Black_Sword_2nd.png">
+                        <h2 hidden>The Black Sword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Prototype_Rancour_2nd.png">
+                        <h2 hidden>Prototype Rancour</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Iron_Sting_2nd.png">
+                        <h2 hidden>Iron Sting</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Amenoma_Kageuchi_2nd.png">
+                        <h2 hidden>Anemona Kageuchi</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Alley_Flash_2nd.png">
+                        <h2 hidden>The Alley Flash</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Festering_Desire_2nd.png">
+                        <h2 hidden>Festering Desire</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Cinnabar_Spindle_2nd.png">
+                        <h2 hidden>Cinnabar Spindle</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Skyward_Blade_2nd.png">
+                        <h2 hidden>Skyward Blade</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Aquila_Favonia_2nd.png">
+                        <h2 hidden>Aquila Favonia</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Primordial_Jade_Cutter_2nd.png">
+                        <h2 hidden>Primordial Jade Cutter</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Summit_Shaper_2nd.png">
+                        <h2 hidden>Summit Shaper</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Freedom-Sworn_2nd.png">
+                        <h2 hidden>Freedom Sworn</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Mistsplitter_Reforged_2nd.png">
+                        <h2 hidden>Mistsplitter Reforged</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Favonius_Greatsword_2nd.png">
+                        <h2 hidden>Favonius Greatsword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Sacrificial_Greatsword_2nd.png">
+                        <h2 hidden>Sacrificial Greatsword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Rainslasher_2nd.png">
+                        <h2 hidden>Rainslasher</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Bell_2nd.png">
+                        <h2 hidden>The Bell</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Royal_Greatsword_2nd.png">
+                        <h2 hidden>Royal Greatsword</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Blackcliff_Slasher_2nd.png">
+                        <h2 hidden>Blackcliff Slasher</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Serpent_Spine_2nd.png">
+                        <h2 hidden>Serpent Spine</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Prototype_Archaic_2nd.png">
+                        <h2 hidden>Prototype Archaic</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Whiteblind_2nd.png">
+                        <h2 hidden>Whiteblind</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Katsuragikiri_Nagamasa_2nd.png">
+                        <h2 hidden>Katsuragikiri Nagamasa</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Snow-Tombed_Starsilver_2nd.png">
+                        <h2 hidden>Snow-Tombed Starsilver</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Lithic_Blade_2nd.png">
+                        <h2 hidden>Lithic Blade</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Akuoumaru_2nd.png">
+                        <h2 hidden>Akuoumaru</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Luxurious_Sea-Lord_2nd.png">
+                        <h2 hidden>Luxurious Sea-Lord</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Skyward_Pride_2nd.png">
+                        <h2 hidden>Skyward Pride</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Wolfs_Gravestone_2nd.png">
+                        <h2 hidden>Wolf's Gravestone</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_The_Unforged_2nd.png">
+                        <h2 hidden>The Unforged</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Song_of_Broken_Pines_2nd.png">
+                        <h2 hidden>Song of Broken Pines</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Redhorn_Stonethresher_2nd.png">
+                        <h2 hidden>Redhorn Stonethresher</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Favonius_Lance_2nd.png">
+                        <h2 hidden>Favonius Lance</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Dragons_Bane_2nd.png">
+                        <h2 hidden>Dragon's Bane</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Royal_Spear_2nd.png">
+                        <h2 hidden>Royal Spear</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Blackcliff_Pole_2nd.png">
+                        <h2 hidden>Blackcliff Pole</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Deathmatch_2nd.png">
+                        <h2 hidden>Deathmatch</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Prototype_Starglitter_2nd.png">
+                        <h2 hidden>Weapon_Prototype_Starglitter_2nd</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Crescent_Pike_2nd.png">
+                        <h2 hidden>Crescent Pike</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Kitain_Cross_Spear_2nd.png">
+                        <h2 hidden>Kitain Cross Spear</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Dragonspine_Spear_2nd.png">
+                        <h2 hidden>Dragonspine Spear</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Lithic_Spear_2nd.png">
+                        <h2 hidden>Lithic Spear</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Wavebreakers_Fin_2nd.png">
+                        <h2 hidden>Wavebreaker's Fin</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Catch_2nd.png">
+                        <h2 hidden>The Catch</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Skyward_Spine_2nd.png">
+                        <h2 hidden>Skyward Spine</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Primordial_Jade_Winged-Spear_2nd.png">
+                        <h2 hidden>Primordial Jade Winged-Spear</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Vortex_Vanquisher_2nd.png">
+                        <h2 hidden>Vortex Vanquisher</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Staff_of_Homa_2nd.png">
+                        <h2 hidden>Staff of Homa</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Calamity_Queller_2nd.png">
+                        <h2 hidden>Calamity Queller</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Engulfing_Lightning_2nd.png">
+                        <h2 hidden>Engulfing Lightning</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Favonius_Codex_2nd.png">
+                        <h2 hidden>Favonius Codex</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Sacrificial_Fragments_2nd.png">
+                        <h2 hidden>Sacrificial Fragments</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Widsith_2nd.png">
+                        <h2 hidden>The Widsith</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Eye_of_Perception_2nd.png">
+                        <h2 hidden>Eye of Perception</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Royal_Grimoire_2nd.png">
+                        <h2 hidden>Royal Grimoire</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Blackcliff_Amulet_2nd.png">
+                        <h2 hidden>Blackcliff Amulet</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Solar_Pearl_2nd.png">
+                        <h2 hidden>Weapon_Solar_Pearl_2nd</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Prototype_Amber_2nd.png">
+                        <h2 hidden>Prototype Amber</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Mappa_Mare_2nd.png">
+                        <h2 hidden>Mappa Mare</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Hakushin_Ring_2nd.png">
+                        <h2 hidden>Hakushin Ring</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Frostbearer_2nd.png">
+                        <h2 hidden>Frostbearer</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Wine_and_Song_2nd.png">
+                        <h2 hidden>Wine and Song</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Dodoco_Tales_2nd.png">
+                        <h2 hidden>Dodoco Tales</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Oathsworn_Eye_2nd.png">
+                        <h2 hidden>Oathsworn Eye</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Skyward_Atlas_2nd.png">
+                        <h2 hidden>Skyward Atlas</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Lost_Prayer_to_the_Sacred_Winds_2nd.png">
+                        <h2 hidden>Lost Prayer to the Sacred Winds</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Memory_of_Dust_2nd.png">
+                        <h2 hidden>Memory of Dust</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Kaguras_Verity_2nd.png">
+                        <h2 hidden>Kagura's Verity</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Everlasting_Moonglow_2nd.png">
+                        <h2 hidden>Everlasting Moonglow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Favonius_Warbow_2nd.png">
+                        <h2 hidden>Favonius Warbow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Sacrificial_Bow_2nd.png">
+                        <h2 hidden>Sacrificial Bow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Stringless_2nd.png">
+                        <h2 hidden>The Stringless</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Rust_2nd.png">
+                        <h2 hidden>Rust</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Royal_Bow_2nd.png">
+                        <h2 hidden>Royal Bow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Blackcliff_Warbow_2nd.png">
+                        <h2 hidden>Blackcliff Warbow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_The_Viridescent_Hunt_2nd.png">
+                        <h2 hidden>The Viridescent Hunt</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Prototype_Crescent_2nd.png">
+                        <h2 hidden>Prototype Crescent</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Compound_Bow_2nd.png">
+                        <h2 hidden>Compound Bow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Hamayumi_2nd.png">
+                        <h2 hidden>Hamayumi</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Mitternachts_Waltz_2nd.png">
+                        <h2 hidden>Mitternachts Waltz</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Alley_Hunter_2nd.png">
+                        <h2 hidden>Alley Hunter</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Mouuns_Moon_2nd.png">
+                        <h2 hidden>Mouuns Moon</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-4star-icon" src="images/Weapons/Weapon_Windblume_Ode_2nd.png">
+                        <h2 hidden>Windblume Ode</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Skyward_Harp_2nd.png">
+                        <h2 hidden>Skyward Harp</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Amos_Bow_2nd.png">
+                        <h2 hidden>Amos Bow</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Polar_Star_2nd.png">
+                        <h2 hidden>Polar Star</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Elegy_for_the_End_2nd.png">
+                        <h2 hidden>Elegy for the End</h2>
+                    </div>
+                    <div class = "weapon">
+                        <img class = "weapon-5star-icon" src="images/Weapons/Weapon_Thundering_Pulse_2nd.png">
+                        <h2 hidden>Thundering Pulse</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="body-container">
+            <div class="widget-container">
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>Resin Timer</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>
+                            <img class = "reminder-icon" src="images/HoYoLab.png">
+                            HoYoLab Login
+                        </p>
+                    </div>
+                    <div class="check-in" style = "text-align: center">
+                        <a href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481" class="button">Check in now!</a>
+                    </div>                  
+                    
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p style = "font-size: 2.6vmin;">
+                            <img class = "reminder-icon" src="images/Item_Parametric_Transformer.png">
+                            Parametric Transformer
+                        </p>
+                    </div>
+                    <div class="refresh" style = "text-align: center">
+                        <a class="button">Refresh</a>
+                    </div>
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>
+                            <img class="reminder-spiral-icon" src="images/Item_Spiral_Abyss.png">
+                            Spiral Abyss
+                        </p>
+                    </div>
+                    <div class="abyss-stars" style="text-align: center">
+                            <button class = increment-decrement onclick = "decrement()"> - </button>
+                            <p id = "stars" style="display: inline-block;">1 </p>
+                            <p style="display: inline-block;" > stars </p>
+                            <button class = increment-decrement onclick = "increment()"> + </button>
+                    </div>
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p style="font-size:2.5vmin;">Current Wishes</p>
+                    </div>
+                    <div class="current-banners" style="text-align: center">
+                        <img class="banners"  id="all-banners" src="images/banner1.png" onclick ="rotateBanner()">
+                    </div>
+                    <div class="timer" style="font-size:2.5vmin;">
+                        <p>Ends in 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title" style="margin-top: 7%">
+                        <p>
+                            <img class="reminder-boss-icon" id="all-bosses" src="images/Enemy_Andrius_Icon.png" onclick ="rotateBoss()">
+                            Weekly Bosses</p>
+                    </div>
+                    <div class="timer" style="margin-top: -20%">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/weapon_select.js"></script>
+
+</body>
+</html>
