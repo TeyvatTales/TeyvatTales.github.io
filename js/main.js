@@ -80,3 +80,43 @@
     }
 
     var hoyoFunction = setInterval(hoyoLabTimer, 1000);
+
+    function spiralTimer() {
+        const now = new Date();
+        var hours = now.getUTCHours();
+        var minutes = now.getUTCMinutes();
+        var seconds = now.getUTCSeconds();
+
+        // Change to UTC-5 (North America)
+        if (hours - 5 < 0) {
+            now.setUTCHours(-1);
+            now.setUTCHours(hours - 5 + 24);
+        }
+        else {
+            now.setUTCHours(hours - 5);
+        }
+
+        const end = new Date(now);
+
+        if (now.getUTCDate() < 16) {
+            end.setUTCDate(16);
+        }
+        else {
+            end.setUTCDate(1);
+            end.setMonth(end.getMonth() + 1);
+        }
+        end.setUTCHours(4, 0, 0, 0);
+        const timeLeft = end.getTime() - now.getTime();
+
+        var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hrs = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var s = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("spiralDays").innerHTML = days;
+        document.getElementById("spiralHrs").innerHTML = hrs;
+        document.getElementById("spiralMins").innerHTML = mins;
+        document.getElementById("spiralS").innerHTML = s;
+    }
+
+    var spiralFunction = setInterval(spiralTimer, 1000);
