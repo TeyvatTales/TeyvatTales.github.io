@@ -111,7 +111,6 @@ html {
 
 .character-list {
     display: grid;
-    height: 98%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 10px;
     /* row-gap: 2vh;
