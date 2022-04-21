@@ -48,3 +48,22 @@
             currentBoss.src = "images/Enemy_Andrius_Icon.png";
         }
     }
+
+    function updateClock() {
+        var now = new Date();
+        var nName = now.getDay();
+        var nMonth = now.getMonth();
+        var nNum = now.getDate();
+        var nYear = now.getFullYear();
+
+        var months =["Janurary", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var ids = ["dayName", "month", "dayNum", "year"];
+        var values = [weeks[nName], months[nMonth], nNum, nYear];
+
+        for(var i = 0; i < ids.length; i++) {
+            document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+        }
+    }
+
+    window.setInterval("updateClock()", 1);
