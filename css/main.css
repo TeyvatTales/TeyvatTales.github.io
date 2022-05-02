@@ -309,6 +309,86 @@ html {
     margin-bottom: -6%;
 }
 
+.resin-timer-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.resin-timer-upper-half {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+.resin-timer-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.resin-timer-title {
+    color: white;
+    font-family:"Omnes";
+    font-weight: 200;
+    font-size: 1.4vw;
+    text-align: right;
+    margin-top: 6%;
+    margin-right: 30%;
+}
+
+.resin-timer-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resin-fraction {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.resin-fraction-denominator {
+    color: white;
+    font-family:"Omnes";
+    font-weight: 200;
+    font-size: 1.8vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.resin-checkboxes {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.resin-checkbox-text {
+    color: white;
+    font-family:"Omnes";
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.resin-timer-lower-half {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.refill-in-text {
+    color: white;
+    font-family:"Omnes";
+    font-weight: 200;
+    font-size: 1.6vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.resin-icon {
+    width: 70%;
+    height: 70%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
