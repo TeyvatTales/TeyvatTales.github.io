@@ -198,19 +198,28 @@
                                 <div class="resin-timer-title">Resin Timer</div>
                                 <div class="resin-timer-form">
                                     <div class="resin-fraction">
-                                        <div></div>
+                                        <form>
+                                            <input type="text" id="resinEntry" name="resinEntry">
+                                        </form>
                                         <div class="resin-fraction-denominator">/160</div>
                                     </div>
-                                    <div class="resin-checkboxes">
-                                        <div class="resin-checkbox-text">Full</div>
-                                        <div class="resin-checkbox-text">Until</div>
+                                    <div class="resin-checkboxes-grid">
+                                        <div class="resin-checkboxes">
+                                            <input type="checkbox" id="fullResin">
+                                            <label for="fullResin">Full</label>
+                                        </div>
+                                        <div class="resin-checkboxes">
+                                            <input type="checkbox" id="untilResin">
+                                            <label for="untilResin">Until</label>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="resin-timer-lower-half">
                             <div class="refill-in-text">Refill in</div>
-                            <div class="resin-checkboxes">
+                            <div class="resin-checkboxes-grid">
                                 <div class="refill-in-text">10h 10m 20s</div>
                                 <div class="refill-in-text">10:22 AM</div>
                             </div>
