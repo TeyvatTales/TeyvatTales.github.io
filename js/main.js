@@ -120,3 +120,29 @@
     }
 
     var spiralFunction = setInterval(spiralTimer, 1000);
+    var resin = 0;
+
+    function resinTimer() {
+        const now = new Date();
+        var resin = document.getElementById("resinEntry").value;
+        //var resin = 60;
+
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        const end = new Date(now);
+        end.setTime(now.getTime() + ((160 - resin) * 8 * 60000));
+        const timeLeft = end.getTime() - now.getTime();
+
+        var hrs = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var s = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("resinHrs").innerHTML = hrs;
+        document.getElementById("resinMins").innerHTML = mins;
+        document.getElementById("resinS").innerHTML = s;
+    }
+
+    var resinFunction = setInterval(resinTimer, 1000);
+

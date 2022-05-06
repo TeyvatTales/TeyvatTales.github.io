@@ -199,7 +199,7 @@
                                 <div class="resin-timer-form">
                                     <div class="resin-fraction">
                                         <form>
-                                            <input type="text" id="resinEntry" name="resinEntry">
+                                            <input type="text" id="resinEntry" name="resinEntry" onchange="resinTimer()">
                                         </form>
                                         <div class="resin-fraction-denominator">/160</div>
                                     </div>
@@ -220,8 +220,14 @@
                         <div class="resin-timer-lower-half">
                             <div class="refill-in-text">Refill in</div>
                             <div class="resin-checkboxes-grid">
-                                <div class="refill-in-text">10h 10m 20s</div>
-                                <div class="refill-in-text">10:22 AM</div>
+                                <div class="timer">
+                                    <p id="resinHrs" style="display: inline-block;"></p><p style="display: inline-block;">h</p>
+                                    <p id="resinMins" style="display: inline-block;"></p><p style="display: inline-block;">m</p>
+                                    <p id="resinS" style="display: inline-block;"></p><p style="display: inline-block;">s</p>
+                                </div>
+                                <div class="timer">
+                                    <p style="display: inline-block;"></p><p style="display: inline-block;">10:22am</p>
+                                </div>
                             </div>
                         </div>
                     </div>
