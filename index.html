@@ -258,10 +258,14 @@
                         </p>
                     </div>
                     <div class="refresh" style = "text-align: center">
-                        <a class="button">Refresh</a>
+                        <a class= "button" onclick = "parametricTimerCalculate()">Refresh</a>
                     </div>
                     <div class="timer">
-                        <p>Resets 10h10m20s</p>
+                        <p style="display: inline-block;">Resets</p>
+                        <p id="parametricDays" style="display: inline-block;"></p><p style="display: inline-block;">d</p> 
+                        <p id="parametricHrs" style="display: inline-block;"></p><p style="display: inline-block;">h</p>
+                        <p id="parametricMins" style="display: inline-block;"></p><p style="display: inline-block;">m</p>
+                        <p id="parametricS" style="display: inline-block;"></p><p style="display: inline-block;">s</p>
                     </div>
                 </div>
                 <div class="reminder-container">
@@ -293,7 +297,11 @@
                         <img class="banners"  id="all-banners" src="images/banner1.png" onclick ="rotateBanner()">
                     </div>
                     <div class="timer" style="font-size:2.5vmin;">
-                        <p>Ends in 10h10m20s</p>
+                        <p style="display:inline-block">Ends in</p>
+                        <p id="bannerDays" style="display: inline-block;"></p><p style="display: inline-block;">d</p>
+                        <p id="bannerHrs" style="display: inline-block;"></p><p style="display: inline-block;">h</p>
+                        <p id="bannerMins" style="display: inline-block;"></p><p style="display: inline-block;">m</p>
+                        <p id="bannerS" style="display: inline-block;"></p><p style="display: inline-block;">s</p>   
                     </div>
                 </div>
                 <div class="reminder-container">
@@ -303,7 +311,11 @@
                             Weekly Bosses</p>
                     </div>
                     <div class="timer" style="margin-top: -20%">
-                        <p>Resets 10h10m20s</p>
+                        <p style="display:inline-block">Resets</p>
+                        <p id="bossDays" style="display: inline-block;"></p><p style="display: inline-block;">d</p>
+                        <p id="bossHrs" style="display: inline-block;"></p><p style="display: inline-block;">h</p>
+                        <p id="bossMins" style="display: inline-block;"></p><p style="display: inline-block;">m</p>
+                        <p id="bossS" style="display: inline-block;"></p><p style="display: inline-block;">s</p>                    
                     </div>
                 </div>
             </div>
