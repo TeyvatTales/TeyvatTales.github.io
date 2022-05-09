@@ -327,10 +327,11 @@ input[type=text] {
 
 .resin-timer-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40% 40%;
 }
 
 .resin-timer-upper-half {
+    z-index: 2;
     display: grid;
     grid-template-columns: 30% 1fr;
 }
@@ -387,6 +388,7 @@ label {
 }
 
 .resin-timer-lower-half {
+    z-index: 1;
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
@@ -404,7 +406,7 @@ label {
 
 .resin-icon {
     width: 75%;
-    height: 72%;
+    height: auto;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;

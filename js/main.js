@@ -120,29 +120,40 @@
     }
 
     var spiralFunction = setInterval(spiralTimer, 1000);
+    var timeLeft = 0;
 
-    var resin = 0;
-
-    function resinTimer() {
+    function resinTimerUpdate() {
         const now = new Date();
+        const end = new Date(now);
         var resin = document.getElementById("resinEntry").value;
         //var resin = 60;
 
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
+        if (document.getElementById("fullResin").checked) {
+            end.setTime(now.getTime() + ((160 - resin) * 8 * 60000));
+        }
+        else {
+            var until = document.getElementById("untilEntry").value;
+            if (until > resin) {
+                end.setTime(now.getTime() + ((until - resin) * 8 * 60000));
+            }
+        }
 
-        const end = new Date(now);
-        end.setTime(now.getTime() + ((160 - resin) * 8 * 60000));
-        const timeLeft = end.getTime() - now.getTime();
+        timeLeft = end.getTime() - now.getTime();
+        document.getElementById("resinTime").innerHTML = end.toLocaleTimeString();
 
-        var hrs = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        var s = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    }
 
-        document.getElementById("resinHrs").innerHTML = hrs;
-        document.getElementById("resinMins").innerHTML = mins;
-        document.getElementById("resinS").innerHTML = s;
+    function resinTimer() {
+        if (timeLeft > 0) {
+            var hrs = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            var s = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("resinHrs").innerHTML = hrs;
+            document.getElementById("resinMins").innerHTML = mins;
+            document.getElementById("resinS").innerHTML = s;
+            timeLeft -= 1000;
+        }
     }
 
     var resinFunction = setInterval(resinTimer, 1000);

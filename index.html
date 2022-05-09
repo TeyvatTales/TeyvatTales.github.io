@@ -199,18 +199,22 @@
                                 <div class="resin-timer-form">
                                     <div class="resin-fraction">
                                         <form>
-                                            <input type="text" id="resinEntry" name="resinEntry" onchange="resinTimer()">
+                                            <input type="text" id="resinEntry" name="resinEntry" onchange="resinTimerUpdate()">
                                         </form>
                                         <div class="resin-fraction-denominator">/160</div>
                                     </div>
                                     <div class="resin-checkboxes-grid">
                                         <div class="resin-checkboxes">
-                                            <input type="checkbox" id="fullResin">
+                                            <input type="radio" id="fullResin" name="fullUntil" value="fullResin" checked onchange="resinTimerUpdate()">
                                             <label for="fullResin">Full</label>
                                         </div>
                                         <div class="resin-checkboxes">
-                                            <input type="checkbox" id="untilResin">
+                                            <input type="radio" id="untilResin" name="fullUntil" value="untilResin" onchange="resinTimerUpdate()">
                                             <label for="untilResin">Until</label>
+                                            <form>
+                                                <input style="height: 60%; width: 60%; margin-top: 0%;
+                                                margin-left: 10%; font-size: 1vmax;" type="text" id="untilEntry" name="untilEntry" onchange="resinTimerUpdate()">
+                                            </form>
                                         </div>
                                     </div>
                                     
@@ -226,7 +230,7 @@
                                     <p id="resinS" style="display: inline-block;"></p><p style="display: inline-block;">s</p>
                                 </div>
                                 <div class="timer">
-                                    <p style="display: inline-block;"></p><p style="display: inline-block;">10:22am</p>
+                                    <p id="resinTime" style="display: inline-block;"></p>
                                 </div>
                             </div>
                         </div>
