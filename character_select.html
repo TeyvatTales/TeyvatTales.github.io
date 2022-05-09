@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teyvat Tales</title>
+    <link rel="stylesheet" href="css/character_select.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Teyvat
+        <img class = "book" src="images/Adventurer_Handbook.png"  alt="Adventurer Handbook"> Tales </h1>
+    </div>
+    <div class="date">
+        <h1 class ="day" id="dayName">Day</span></h1>
+        <h1 class ="current_date">
+            <span id="month">Month</span>
+            <span id="dayNum">00</span>
+            <span id="year">Year</span>
+        </h1>
+    </div>
+    <div class="traveler-greeting">
+        <h1 class = "greetings">Hello Traveler! Today you should farm:</h1>
+    </div>
+    
+    <div class="body-grid">
+        <div class="body-container">
+            <div class="character-container">
+                <form style="width: 55%; display: inline-block;">
+                    <input class="search-bar" type = "text" name ="" id="search-item" placeholder="Search for character" onkeyup="searchCharacter()">
+                </form>
+                <div class="back">
+                    <a href="index.html" class="button" style="border-radius: .5vw;">Back</a>
+                </div>  
+                <div class="character-list" id="character-list">
+                    <div class = "character" id="Anemo MC">
+                        <img class = "character-5star-icon" src="images/Characters/Character_Anemo_Aether_Thumb.png">
+                        <h2 hidden>Anemo MC</h2>
+                    </div>
+                    <div class = "character"  id="Geo MC">
+                        <img class = "character-5star-icon" src="images/Characters/Character_Geo_Lumine_Thumb.png">
+                        <h2 hidden>Geo MC</h2>
+                    </div>
+                    <div class = "character" id="Electro MC">
+                        <img class = "character-5star-icon" src="images/Characters/Character_Electro_Aether_Thumb.png">
+                        <h2 hidden>Electro MC</h2>
+                    </div>
+                    <div class = "character" id="Aloy">
+                        <img class = "character-special-icon" src="images/Characters/Character_Aloy_Thumb.png">
+                        <h2 hidden>Aloy</h2>
+                    </div>
+                    <div class = "character" id="Amber">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Amber_Thumb.png">
+                        <h2 hidden>Amber</h2>
+                    </div>
+                    <div class = "character" id="Barbara">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Barbara_Thumb.png">
+                        <h2 hidden>Barbara</h2>
+                    </div>
+                    <div class = "character" id="Bennett">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Bennett_Thumb.png">
+                        <h2 hidden>Bennett</h2>
+                    </div>
+                    <div class = "character" id="Fischl">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Fischl_Thumb.png">
+                        <h2 hidden>Fischl</h2>
+                    </div>
+                    <div class = "character" id="Kaeya">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Kaeya_Thumb.png">
+                        <h2 hidden>Kaeya</h2>
+                    </div>
+                    <div class = "character" id="Lisa">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Lisa_Thumb.png">
+                        <h2 hidden>Lisa</h2>
+                    </div>
+                    <div class = "character" id="Noelle">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Noelle_Thumb.png">
+                        <h2 hidden>Noelle</h2>
+                    </div>
+                    <div class = "character" id="Razor">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Razor_Thumb.png">
+                        <h2 hidden>Razor</h2>
+                    </div>
+                    <div class = "character" id="Sucrose">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Sucrose_Thumb.png">
+                        <h2 hidden>Sucrose</h2>
+                    </div>
+                    <div class = "character" id="Diona">
+                        <img class = "character-4star-icon" src="images/Characters/Character_Diona_Thumb.png">
+                        <h2 hidden>Diona</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Rosaria" src="images/Characters/Character_Rosaria_Thumb.png">
+                        <h2 hidden>Rosaria</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Diluc" src="images/Characters/Character_Diluc_Thumb.png">
+                        <h2 hidden>Diluc</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Jean" src="images/Characters/Character_Jean_Thumb.png">
+                        <h2 hidden>Jean</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Mona" src="images/Characters/Character_Mona_Thumb.png">
+                        <h2 hidden>Mona</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Venti" src="images/Characters/Character_Venti_Thumb.png">
+                        <h2 hidden>Venti</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Klee" src="images/Characters/Character_Klee_Thumb.png">
+                        <h2 hidden>Klee</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Albedo" src="images/Characters/Character_Albedo_Thumb.png">
+                        <h2 hidden>Albedo</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Eula" src="images/Characters/Character_Eula_Thumb.png">
+                        <h2 hidden>Eula</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Xingqiu" src="images/Characters/Character_Xingqiu_Thumb.png">
+                        <h2 hidden>Xingqiu</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Chongyun" src="images/Characters/Character_Chongyun_Thumb.png">
+                        <h2 hidden>Chongyun</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Xiangling" src="images/Characters/Character_Xiangling_Thumb.png">
+                        <h2 hidden>Xiangling</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Beidou" src="images/Characters/Character_Beidou_Thumb.png">
+                        <h2 hidden>Beidou</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Ningguang" src="images/Characters/Character_Ningguang_Thumb.png">
+                        <h2 hidden>Ningguang</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Xinyan" src="images/Characters/Character_Xinyan_Thumb.png">
+                        <h2 hidden>Xinyan</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Yanfei" src="images/Characters/Character_Yanfei_Thumb.png">
+                        <h2 hidden>Yanfei</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Yun Jin" src="images/Characters/Character_Yun_Jin_Thumb.png">
+                        <h2 hidden>Yun Jin</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Keqing" src="images/Characters/Character_Keqing_Thumb.png">
+                        <h2 hidden>Keqing</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Qiqi" src="images/Characters/Character_Qiqi_Thumb.png">
+                        <h2 hidden>Qiqi</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Tartaglia" src="images/Characters/Character_Tartaglia_Thumb.png">
+                        <h2 hidden>Tartaglia Childe</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Zhongli" src="images/Characters/Character_Zhongli_Thumb.png">
+                        <h2 hidden>Zhongli</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Ganyu" src="images/Characters/Character_Ganyu_Thumb.png">
+                        <h2 hidden>Ganyu</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Xiao" src="images/Characters/Character_Xiao_Thumb.png">
+                        <h2 hidden>Xiao</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Hu Tao" src="images/Characters/Character_Hu_Tao_Thumb.png">
+                        <h2 hidden>Hu Tao</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Shenhe" src="images/Characters/Character_Shenhe_Thumb.png">
+                        <h2 hidden>Shenhe</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Sayu" src="images/Characters/Character_Sayu_Thumb.png">
+                        <h2 hidden>Sayu</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Kujou Sara" src="images/Characters/Character_Kujou_Sara_Thumb.png"> 
+                        <h2 hidden>Kujou Sara</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Thoma" src="images/Characters/Character_Thoma_Thumb.png">
+                        <h2 hidden>Thoma</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-4star-icon" id="Gorou" src="images/Characters/Character_Gorou_Thumb.png">
+                        <h2 hidden>Gorou</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Kaedehara Kazuha" src="images/Characters/Character_Kaedehara_Kazuha_Thumb.png">
+                        <h2 hidden>Kaedehara Kazuha</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Kamisato Ayaka" src="images/Characters/Character_Kamisato_Ayaka_Thumb.png">
+                        <h2 hidden>Kamisato Ayaka</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Yoimiya" src="images/Characters/Character_Yoimiya_Thumb.png">
+                        <h2 hidden>Yoimiya</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Raiden Shogun" src="images/Characters/Character_Raiden_Shogun_Thumb.png">
+                        <h2 hidden>Raiden Shogun</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Sangonomiya Kokomi" src="images/Characters/Character_Sangonomiya_Kokomi_Thumb.png">
+                        <h2 hidden>Sangonomiya Kokomi</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Arataki Itto" src="images/Characters/Character_Arataki_Itto_Thumb.png">
+                        <h2 hidden>Arataki Itto</h2>
+                    </div>
+                    <div class = "character">
+                        <img class = "character-5star-icon" id="Yae Miko" src="images/Characters/Character_Yae_Miko_Thumb.png">
+                        <h2 hidden>Yae Miko</h2>
+                    </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="body-container">
+            <div class="widget-container">
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>Resin Timer</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>
+                            <img class = "reminder-icon" src="images/HoYoLab.png">
+                            HoYoLab Login
+                        </p>
+                    </div>
+                    <div class="check-in" style = "text-align: center">
+                        <a href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481" class="button">Check in now!</a>
+                    </div>                  
+                    
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p style = "font-size: 2.4vmin;">
+                            <img class = "reminder-icon" src="images/Item_Parametric_Transformer.png" style="margin-right: -2%;">
+                            Parametric Transformer
+                        </p>
+                    </div>
+                    <div class="refresh" style = "text-align: center">
+                        <a class="button">Refresh</a>
+                    </div>
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p>
+                            <img class="reminder-spiral-icon" src="images/Item_Spiral_Abyss.png">
+                            Spiral Abyss
+                        </p>
+                    </div>
+                    <div class="abyss-stars" style="text-align: center">
+                            <button class = increment-decrement onclick = "decrement()"> - </button>
+                            <p id = "stars" style="display: inline-block;">1 </p>
+                            <p style="display: inline-block;" > stars </p>
+                            <button class = increment-decrement onclick = "increment()"> + </button>
+                    </div>
+                    <div class="timer">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title">
+                        <p style="font-size:2.5vmin;">Current Wishes</p>
+                    </div>
+                    <div class="current-banners" style="text-align: center">
+                        <img class="banners"  id="all-banners" src="images/banner1.png" onclick ="rotateBanner()">
+                    </div>
+                    <div class="timer" style="font-size:2.5vmin;">
+                        <p>Ends in 10h10m20s</p>
+                    </div>
+                </div>
+                <div class="reminder-container">
+                    <div class="reminder-container-title" style="margin-top: 7%">
+                        <p>
+                            <img class="reminder-boss-icon" id="all-bosses" src="images/Enemy_Andrius_Icon.png" onclick ="rotateBoss()">
+                            Weekly Bosses</p>
+                    </div>
+                    <div class="timer" style="margin-top: -20%">
+                        <p>Resets 10h10m20s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/character_select.js"></script>
+
+</body>
+</html>
