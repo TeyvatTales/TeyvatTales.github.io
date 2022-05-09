@@ -334,12 +334,12 @@ input[type=text] {
     font-size: 1.65vw;
     text-align: center;
     margin-top: -10%;
-    margin-bottom: -6%;
+    margin-bottom: -5%;
 }
 
 .resin-timer-grid {
     display: grid;
-    grid-template-rows: 40% 40%;
+    grid-template-rows: 1fr 43%;    
 }
 
 .resin-timer-upper-half {
@@ -403,6 +403,11 @@ label {
     z-index: 1;
     display: grid;
     grid-template-columns: 2fr 3fr;
+}
+
+.resin-refill-grid {
+    display: grid;
+    grid-template-rows: 40% 40%;
 }
 
 .refill-in-text {
