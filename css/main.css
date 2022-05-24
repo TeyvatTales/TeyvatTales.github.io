@@ -286,6 +286,7 @@ input[type=text] {
     display: inline-block;
     margin:auto;
     border:none;
+    z-index: 2;
 }
 
 .abyss-stars {
@@ -297,6 +298,7 @@ input[type=text] {
     display: inline-block;
     margin-top: -10%;
     margin-bottom: -10%;
+    z-index: 2;
 }
 
 .increment-decrement {
@@ -335,6 +337,7 @@ input[type=text] {
     text-align: center;
     margin-top: -10%;
     margin-bottom: -5%;
+    z-index: 1;
 }
 
 .resin-timer-grid {
