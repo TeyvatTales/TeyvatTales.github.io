@@ -1,5 +1,5 @@
 
-    var data = 0;
+    var data = getAbyssCookie();
     document.getElementById("stars").innerText = data;
     function decrement() {
         if (data > 0) {
@@ -205,7 +205,7 @@
         }
         
         const end = new Date(now);
-        end.setDate(now.getDate() + (((1 + 7 - now.getDay()) % 7) || 7));
+        end.setUTCDate(now.getUTCDate() + (((1 + 7 - now.getUTCDay()) % 7) || 7));
         end.setUTCHours(4, 0, 0, 0);
 
         const timeLeft = end.getTime() - now.getTime();
@@ -276,3 +276,26 @@
     }
 
     window.setInterval("updateClock()", 1);
+
+    function setAbyssCookie() {
+        const d = new Date();
+        d.setTime(d.getTime() + (30*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = "starAmount=" + data + ";" + expires + ";path=/";
+    }
+
+    function getAbyssCookie() {
+        let name = "starAmount=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }

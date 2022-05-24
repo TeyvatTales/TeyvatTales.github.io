@@ -331,7 +331,7 @@ input[type=text] {
     font-family:"Omnes";
     word-spacing: 6px;
     font-weight: 200;
-    font-size: 1.65vw;
+    font-size: 1.6vw;
     text-align: center;
     margin-top: -10%;
     margin-bottom: -5%;
@@ -415,7 +415,7 @@ label {
     font-family:"Omnes";
     font-weight: 200;
     font-size: 1.6vw;
-    margin-top: auto;
+    margin-top: 8%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
